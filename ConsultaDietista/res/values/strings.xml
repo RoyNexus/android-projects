@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">Consulta Dietista</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Opciones</string>
+    <string name="bienvenida_txt">Desde esta aplicación podrás realizar consultas dietéticas a una experta en nutrición</string>
+    <string name="enviar_btn">Enviar</string>
 
 </resources>
