@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisVideosActivity"
+    android:orientation="vertical">
+
+    <!-- ActionBar include -->
+    <include
+        layout="@layout/custom_actionbar"
+        android:id="@+id/includeActionBar"/>
+
+    <!-- Mensaje Sólo WiFi -->
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/soloWifiTxt"
+        android:text="@string/solo_wifi"
+        style="@style/labelWifi"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Listado de videos -->
+    <ListView
+        android:id="@+id/videoList"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:listSelector="@color/custom_transparent">
+
+    </ListView>
+
+</LinearLayout>

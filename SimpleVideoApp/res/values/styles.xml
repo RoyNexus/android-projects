@@ -1,0 +1,122 @@
+<resources>
+    <color name="custom_background">@android:color/white</color>
+    <color name="custom_turquoise">#44cbc0</color>
+    <color name="custom_red">#fe3b57</color>
+    <color name="custom_gray">#ff6e6e6e</color>
+    <color name="custom_border">#ffc3c3c3</color>
+    <color name="custom_disabled">#eaeaea</color>
+    <color name="custom_white">@android:color/white</color>
+    <color name="custom_black">@android:color/black</color>
+    <color name="custom_transparent">#00000000</color>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/custom_background</item>
+        <item name="android:headerBackground">@color/custom_turquoise</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:textColor">@color/custom_gray</item>
+        <item name="android:background">@drawable/text_rectangle</item>
+        <item name="android:padding">@dimen/abc_edit_text_inset_bottom_material</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+    <style name="blackLabelWithoutMargins">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/custom_black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@color/custom_transparent</item>
+    </style>
+
+    <style name="blackLabel">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/custom_black</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@color/custom_transparent</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+    <style name="customMessage">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/custom_gray</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@color/custom_transparent</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+    <style name="labelWifi">
+        <item name="android:textColor">@color/custom_gray</item>
+        <item name="android:background">@drawable/wifi_rectangle</item>
+        <item name="android:padding">@dimen/abc_edit_text_inset_bottom_material</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+    <style name="whiteTextTransparentBackground">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/custom_white</item>
+        <item name="android:background">@color/custom_transparent</item>
+    </style>
+
+    <style name="positiveBtn">
+        <item name="android:textColor">@color/custom_white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:background">@drawable/button_rectangle</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+    <style name="negativeBtn">
+        <item name="android:textColor">@color/custom_white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:background">@drawable/red_button_rectangle</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+
+    <style name="redCircleBtn">
+        <item name="android:textColor">@color/custom_white</item>
+        <item name="android:background">@drawable/red_circle</item>
+        <item name="android:padding">@dimen/abc_edit_text_inset_bottom_material</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="greenCircleBtn">
+        <item name="android:textColor">@color/custom_white</item>
+        <item name="android:background">@drawable/green_circle</item>
+        <item name="android:padding">@dimen/abc_edit_text_inset_bottom_material</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="transparentCircleBtn">
+        <item name="android:textColor">@color/custom_white</item>
+        <item name="android:background">@drawable/transparent_circle</item>
+        <item name="android:padding">@dimen/abc_edit_text_inset_bottom_material</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadVideoActivity"
+    android:orientation="vertical">
+
+    <!-- ActionBar include -->
+    <include layout="@layout/custom_actionbar"/>
+
+    <!-- Video preview -->
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.3"
+        android:id="@+id/videoPreview"
+        android:visibility="visible" />
+
+    <!-- Título -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/tituloVideoTxt"
+        android:hint="@string/titulo"
+        android:inputType="textPersonName"
+        android:layout_marginTop="30dp"
+        style="@style/editText" />
+
+    <!-- Categoría-->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/categoriaSpinner"
+        android:hint="@string/categoria"
+        style="@style/editText" />
+
+    <!-- Subcategoría-->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/subcategoriaSpinner"
+        android:hint="@string/subcategoria"
+        style="@style/editText" />
+
+    <!-- Descripción -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:id="@+id/descripcionTxt"
+        android:hint="@string/descripcion_video"
+        android:inputType="textMultiLine"
+        style="@style/editText"
+        android:maxHeight="100dp"
+        android:longClickable="false"
+        android:minHeight="100dp"
+        android:maxLength="255"
+        android:gravity="top" />
+
+    <!-- Botón Entrar -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08"
+        android:id="@+id/uploadVideoBtn"
+        android:enabled="true"
+        android:text="@string/subir_video"
+        android:onClick="onSaveVideo"
+        style="@style/positiveBtn" />
+
+    <!-- Aceptar condiciones legales -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:id="@+id/textLegal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/custom_gray"
+        android:text="@string/al_continuar_aceptas"
+        android:textStyle="normal"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="30dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp" />
+
+</LinearLayout>

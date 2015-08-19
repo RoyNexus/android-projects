@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MiPerfilActivity"
+    android:orientation="vertical">
+
+    <!-- ActionBar include -->
+    <include layout="@layout/custom_actionbar"/>
+
+    <!-- Nombre -->
+    <TextView
+        android:id="@+id/nameEditLbl"
+        android:text="@string/nombre"
+        style="@style/blackLabel" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/nameEditTxt"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        style="@style/editText" />
+
+    <!-- Apellidos -->
+    <TextView
+        android:id="@+id/surnameEditLbl"
+        android:text="@string/apellidos"
+        style="@style/blackLabel" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/surnameEditTxt"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        style="@style/editText" />
+
+    <!-- Cuenta de correo-->
+    <TextView
+        android:id="@+id/mailEditLbl"
+        android:text="@string/mail"
+        style="@style/blackLabel" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/mailEditTxt"
+        android:inputType="textEmailAddress"
+        android:enabled="false"
+        style="@style/editText" />
+
+    <!-- Fecha de nacimiento-->
+    <TextView
+        android:id="@+id/fechaNacimientoEditLbl"
+        android:text="@string/fecha_nacimiento"
+        style="@style/blackLabel" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/fechaNacimientoEditTxt"
+        android:inputType="date"
+        android:enabled="false"
+        style="@style/editText" />
+
+    <!-- Teléfono -->
+    <TextView
+        android:id="@+id/telefonoEditLbl"
+        android:text="@string/telefono"
+        style="@style/blackLabel" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/telefonoEditTxt"
+        android:inputType="phone"
+        android:enabled="false"
+        style="@style/editText"/>
+
+    <!-- Contraseña -->
+    <TextView
+        android:id="@+id/contrasenaEditLbl"
+        android:text="@string/contrasena"
+        style="@style/blackLabel" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/contrasenaEditTxt"
+        android:inputType="textPassword"
+        android:enabled="false"
+        style="@style/editText"/>
+
+    <!-- Espacio vacío -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.81" />
+    <!-- Botón Cerrar sesión -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_weight="0.08"
+        android:id="@+id/cerrarSesionBtn"
+        android:enabled="true"
+        android:text="@string/cerrar_sesion"
+        android:onClick="onLogout"
+        style="@style/negativeBtn" />
+
+
+</LinearLayout>

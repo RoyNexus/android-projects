@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/custom_turquoise">
+
+    <!-- Action Bar Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/actionBarText"
+        android:background="@color/custom_turquoise"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/custom_white"
+        android:textStyle="bold"
+        android:text="Custom Title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="30dp"
+        android:paddingTop="10dp" />
+
+    <!-- Back left arrow icon -->
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:id="@+id/leftActionbar"
+        android:clickable="true"
+        android:onClick="goToBack"
+        android:background="@color/custom_turquoise"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <ImageButton
+            android:layout_width="16dp"
+            android:layout_height="20dp"
+            android:background="@color/custom_turquoise"
+            android:src="@drawable/left_arrow"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:cropToPadding="false" />
+
+    </LinearLayout>
+
+    <!-- Close/cancel icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/rightActionbar"
+        android:background="@color/custom_turquoise"
+        android:layout_gravity="right">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/custom_turquoise"
+            android:src="@drawable/close"
+            android:onClick="goToBack"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:cropToPadding="false" />
+
+    </LinearLayout>
+
+    <!-- Edit pen icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/editPenActionbar"
+        android:background="@color/custom_turquoise"
+        android:layout_gravity="right"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/custom_turquoise"
+            android:src="@drawable/close"
+            android:onClick="goToEditProfile"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:cropToPadding="false" />
+
+    </LinearLayout>
+
+    <!-- Save icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/saveActionbar"
+        android:background="@color/custom_turquoise"
+        android:layout_gravity="right"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/custom_turquoise"
+            android:src="@drawable/close"
+            android:onClick="goToSaveProfile"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:cropToPadding="false" />
+
+    </LinearLayout>
+
+</FrameLayout>

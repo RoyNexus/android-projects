@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <!-- ActionBar include -->
+    <include layout="@layout/custom_actionbar"/>
+
+    <!-- Usuario -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/usernameTxt"
+        android:hint="@string/usuario"
+        android:inputType="textEmailAddress"
+        style="@style/editText" />
+
+    <!-- Contraseña -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/passwordTxt"
+        android:hint="@string/contrasena"
+        android:inputType="textPassword"
+        style="@style/editText" />
+
+    <!-- Entrar Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08"
+        android:id="@+id/entrarBtn"
+        android:enabled="true"
+        android:text="@string/entra"
+        android:onClick="onLogin"
+        style="@style/positiveBtn" />
+
+    <!-- Espacio vacío -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2" />
+
+    <!-- Olvidaste tu contraseña -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:id="@+id/olvidastePassBtn"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/custom_turquoise"
+        android:text="@string/olvidaste_contrasena"
+        android:clickable="true"
+        android:onClick="goToForgetPass"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="30dp"
+        android:textStyle="normal" />
+
+</LinearLayout>

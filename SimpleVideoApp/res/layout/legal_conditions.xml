@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:orientation="vertical">
+
+    <!-- ActionBar include -->
+    <include layout="@layout/custom_actionbar"/>
+
+    <!-- Lee condiciones legales y términos de uso -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00002"
+        android:id="@+id/leeLegalTxt"
+        android:text="@string/lee_terminos_legales"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|top"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        style="@style/blackLabelWithoutMargins"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Scroll para condiciones de uso y términos legales -->
+    <com.entelgy.mediapro.spaininaday.util.InteractiveScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:id="@+id/scrollLegalTerms"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/legalTermsTxt"
+            android:text="@string/terminos_legales"
+            android:textSize="17dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" />
+
+    </com.entelgy.mediapro.spaininaday.util.InteractiveScrollView>
+
+    <!-- Sí, Acepto Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.008"
+        android:id="@+id/aceptoBtn"
+        android:enabled="false"
+        android:text="@string/acepto"
+        android:onClick="onAcepto"
+        android:background="@drawable/gray_button_rectangle"
+        style="@style/positiveBtn" />
+
+    <!-- Espacio vacío -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0000005"
+        android:minHeight="100dp" />
+
+</LinearLayout>

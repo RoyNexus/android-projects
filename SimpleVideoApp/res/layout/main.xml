@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Fondo de pantalla -->
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/splashSpainInADay"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash" />
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:minHeight="62dp">
+        <!-- Botón Login -->
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/loginBtn"
+            android:text="@string/iniciar_sesion"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:background="@color/custom_red"
+            android:layout_gravity="center|fill_horizontal|left"
+            android:onClick="goToEntra"
+            android:textSize="20dp"
+            android:paddingTop="10dp" />
+
+        <!-- Botón Registrar -->
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/registrarBtn"
+            android:text="@string/registrate"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:background="@color/custom_turquoise"
+            android:layout_gravity="center|fill_horizontal"
+            android:onClick="goToRegister"
+            android:textSize="20dp"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

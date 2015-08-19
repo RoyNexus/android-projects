@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PasswordActivity"
+    android:orientation="vertical">
+
+    <!-- ActionBar include -->
+    <include layout="@layout/custom_actionbar"/>
+
+    <!-- Usuario -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/mailEnviarPassTxt"
+        android:hint="@string/introduce_correo"
+        android:inputType="textEmailAddress"
+        style="@style/editText" />
+
+    <!-- Enviar password -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08"
+        android:id="@+id/restablecerBtn"
+        android:enabled="true"
+        android:text="@string/enviar_contrasena"
+        android:onClick="onSendPassword"
+        style="@style/positiveBtn" />
+
+    <!-- Espacio vacío -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.39" />
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:orientation="vertical">
+
+    <!-- ActionBar include -->
+    <include layout="@layout/custom_actionbar"/>
+
+    <!-- Nombre -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/nameTxt"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        android:layout_marginTop="30dp"
+        style="@style/editText" />
+
+    <!-- Apellidos -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/surnameTxt"
+        android:hint="@string/apellidos"
+        android:inputType="textPersonName"
+        style="@style/editText" />
+
+    <!-- Cuenta de correo-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/mailTxt"
+        android:hint="@string/mail"
+        android:inputType="textEmailAddress"
+        style="@style/editText" />
+
+    <!-- Fecha de nacimiento-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/fechaNacimientoTxt"
+        android:hint="@string/fecha_nacimiento"
+        android:inputType="date"
+        style="@style/editText" />
+
+    <!-- Teléfono -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/telefonoTxt"
+        android:hint="@string/telefono"
+        android:inputType="phone"
+        style="@style/editText"/>
+
+    <!-- Contraseña -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:id="@+id/contrasenaTxt"
+        android:hint="@string/contrasena"
+        android:inputType="textPassword"
+        style="@style/editText"/>
+
+    <!-- Botón Entrar -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08"
+        android:id="@+id/registrarBtn"
+        android:enabled="true"
+        android:text="@string/registrate"
+        android:onClick="onRegister"
+        style="@style/positiveBtn" />
+
+    <!-- Espacio vacío -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.81" />
+
+    <!-- Aceptar condiciones legales -->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18"
+        android:id="@+id/textLegal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/custom_gray"
+        android:text="@string/empty_string"
+        android:textStyle="normal"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="30dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp" />
+
+</LinearLayout>

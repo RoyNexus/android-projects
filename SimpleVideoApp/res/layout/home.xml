@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:id="@+id/homeLayout"
+    android:orientation="vertical"
+    android:background="@drawable/background_1">
+
+    <!-- Spain in a Day -->
+    <LinearLayout
+        android:id="@+id/spainInADayTitle"
+        style="@style/whiteTextTransparentBackground"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeTitle1"
+            android:text="@string/spain"
+            android:textAllCaps="true"
+            android:textSize="35dp"
+            style="@style/whiteTextTransparentBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeTitle2"
+            android:text="@string/in_a"
+            android:textAllCaps="true"
+            android:textSize="25dp"
+            style="@style/whiteTextTransparentBackground"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeTitle3"
+            android:text="@string/day"
+            android:textAllCaps="true"
+            android:textSize="35dp"
+            style="@style/whiteTextTransparentBackground"/>
+
+    </LinearLayout>
+
+    <!-- Enviar video -->
+    <LinearLayout
+        android:id="@+id/homeEnviarVideo"
+        android:orientation="horizontal"
+        android:layout_below="@+id/spainInADayTitle"
+        android:layout_centerHorizontal="true"
+        style="@style/whiteTextTransparentBackground">
+
+        <!-- Botón Enviar Video -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_transparent"
+            android:id="@+id/enviarVideoCircleIcon"
+            android:onClick="goToEnviarVideo">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/turquoiseCircle"
+                style="@style/greenCircleBtn"
+                android:onClick="goToEnviarVideo"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/enviar_video"
+                android:id="@+id/nubeIcon"
+                android:layout_gravity="center"
+                android:onClick="goToEnviarVideo"/>
+
+        </FrameLayout>
+
+        <!-- Textos Enviar Video -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/custom_transparent"
+            android:id="@+id/enviarVideoTxt"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:text="@string/enviar_video"
+                android:textAllCaps="true"
+                style="@style/whiteTextTransparentBackground"
+                android:id="@+id/enviarVideoPrincipalTxt"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text="@string/enviar_video_large"
+                style="@style/whiteTextTransparentBackground"
+                android:id="@+id/enviarVideoSecondaryTxt" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Grabar Video -->
+    <LinearLayout
+        android:id="@+id/homeGrabarVideo"
+        android:orientation="horizontal"
+        android:layout_below="@+id/homeEnviarVideo"
+        android:layout_alignLeft="@+id/homeEnviarVideo"
+        style="@style/whiteTextTransparentBackground"
+        android:layout_marginTop="20dp">
+
+        <!-- Botón Grabar Video -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_transparent"
+            android:id="@+id/grabarVideoCircleIcon"
+            android:onClick="goToGrabarVideo">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/redCircle"
+                style="@style/redCircleBtn"
+                android:onClick="goToGrabarVideo" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/grabar_video"
+                android:id="@+id/mobileIcon"
+                android:layout_gravity="center"
+                android:onClick="goToGrabarVideo" />
+
+        </FrameLayout>
+
+        <!-- Textos Grabar Video -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/custom_transparent"
+            android:id="@+id/grabarVideoTxt"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:text="@string/grabar_video"
+                android:textAllCaps="true"
+                style="@style/whiteTextTransparentBackground"
+                android:id="@+id/grabarVideoPrincipalTxt"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text="@string/grabar_video_large"
+                style="@style/whiteTextTransparentBackground"
+                android:id="@+id/grabarVideoSecondaryTxt" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Mis Videos -->
+    <LinearLayout
+        android:id="@+id/homeMisVideos"
+        android:orientation="horizontal"
+        android:layout_below="@+id/homeGrabarVideo"
+        android:layout_alignLeft="@+id/homeGrabarVideo"
+        style="@style/whiteTextTransparentBackground"
+        android:layout_marginTop="20dp">
+
+        <!-- Botón Mis Videos -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_transparent"
+            android:id="@+id/misVideosCircleIcon"
+            android:onClick="goToMisVideos">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/misVideosCircle"
+                style="@style/transparentCircleBtn"
+                android:onClick="goToMisVideos" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/mis_videos"
+                android:id="@+id/misVideosIcon"
+                android:layout_gravity="center"
+                android:onClick="goToMisVideos" />
+
+        </FrameLayout>
+
+        <!-- Textos Mis Videos -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/custom_transparent"
+            android:id="@+id/misVideosTxt"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:text="@string/mis_videos"
+                android:textAllCaps="true"
+                style="@style/whiteTextTransparentBackground"
+                android:id="@+id/misVideosPrincipalTxt"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text="@string/mis_videos_large"
+                style="@style/whiteTextTransparentBackground"
+                android:id="@+id/misVideosSecondaryTxt" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Mi Perfil -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/homeMiPerfil"
+        android:layout_below="@+id/homeMisVideos"
+        android:layout_alignLeft="@+id/homeMisVideos"
+        style="@style/whiteTextTransparentBackground"
+        android:layout_marginTop="20dp">
+
+        <!-- Botón Mis Videos -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_transparent"
+            android:id="@+id/miPerfilCircleIcon"
+            android:onClick="goToMiPerfil">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/miPerfilCircle"
+                style="@style/transparentCircleBtn"
+                android:onClick="goToMiPerfil" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/mi_perfil"
+                android:id="@+id/miPerfilIcon"
+                android:layout_gravity="center"
+                android:onClick="goToMiPerfil" />
+
+        </FrameLayout>
+
+        <!-- Textos Mi Perfil -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/custom_transparent"
+            android:id="@+id/miPerfilTxt"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:text="@string/mi_perfil"
+                android:textAllCaps="true"
+                style="@style/whiteTextTransparentBackground"
+                android:id="@+id/miPerfilPrincipalTxt"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text="@string/mi_perfil_large"
+                style="@style/whiteTextTransparentBackground"
+                android:id="@+id/miPerfilSecondaryTxt" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
